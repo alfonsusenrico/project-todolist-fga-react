@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+html, #root { 
+  height: 100%;
+}
+
+#input {
+  font-family: "Poppins";
+  border: 0px;
+  border-radius: 5px;
+}
+
+#inputEdit {
+  font-family: "Poppins";
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+body {
+  background-image: linear-gradient(180deg, #009EFA, #4FFBDF);
+  /* background-image: url('https://images.unsplash.com/photo-1548276145-69a9521f0499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=877&q=80'); */
+  background-repeat: no-repeat;
+  font-family: "Poppins"
+}
+
+button {
+  border: 0px;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+h1,h3,h4 {
+  color: white;
+}
+
+.main {
+  height: 85vh;
+  width: 70vh;
+  background-image: linear-gradient(90deg, #009EFA, #4FFBDF);
+  border-radius: 15px;
+
+  margin: 0 auto;
+  padding: 10px 10px;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.todo-list {
+}
+
+.todo-item {
+  display: flex;
+  margin: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.item-detail {
+  display: flex;
+  float: left;
+  width: 100%;
+}
+
+.item-detail h3 {
+  width: 100%;
+}
+
+.item-action {
+  display: flex;
+  float: right;
+  width: 50%;
+}
+
+.item-action button {
+  width: 100%;
+  height: 5vh;
+  margin: 0px 10px;
+}
+
+.item-action button:hover {
+  cursor: pointer;
+}
+
+.btn-submit {
+  height: 5%;
+  background-color: lightseagreen;
+  color: white;
+}
+
+.btn-success {
+  background-color: green;
+}
+
+.btn-danger {
+  background-color: red;
+}
+
+.btn-warning {
+  background-color: yellow;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-inner {
+  position: absolute;
+  top: 8%;
+  right: 0;
+  left: 0;
+  width: 480px;
+  padding-bottom: 60px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+.modal-introduction p {
+  border-top: 1px solid;
+  color: #5876a3;
+  width: 384px;
+  line-height: 32px;
+  text-align: center;
+  margin: 36px auto 40px;
+
+}
+
+.modal-btn-submit {
+  font-size: 13px;
+  color: black;
+  width: 200px;
+  padding: 16px 0;
+  border: 0;
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.modal-btn-close {
+  font-size: 13px;
+  color: black;
+  width: 200px;
+  padding: 16px 0;
+  border: 0;
+  background-color: #f0f4f9;
+  cursor: pointer;
+}
+
+.modal-btn-close:hover {
+  color: #8491a5;
+  background-color: #ccd9ea;
+  transition: 0.3s ease-in-out;
+}
