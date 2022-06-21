@@ -6,14 +6,12 @@ import completeIcon from '../assets/check-solid.svg';
 class Main extends React.Component {
 
     constructor(props) {
-        // localStorage.clear();
+        localStorage.clear();
         super(props);
         this.state = {
             item: {},
             name: '',
-            todoList: []
-        }
-        this.state = {
+            todoList: [],
             isModalCompleteOpen: false,
             isModalEditOpen: false,
             isModalDeleteOpen: false
