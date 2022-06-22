@@ -6,7 +6,6 @@ import completeIcon from '../assets/check-solid.svg';
 class Main extends React.Component {
 
     constructor(props) {
-        localStorage.clear();
         super(props);
         this.state = {
             item: {},
@@ -88,6 +87,9 @@ class Main extends React.Component {
         else {
             temp.splice(id, 1);
         }
+        temp.forEach((item, index) => {
+            item.id = index;
+        });
         this.updateState(temp);
     }
 
